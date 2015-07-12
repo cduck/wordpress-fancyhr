@@ -54,27 +54,27 @@
 
 /* Transition timing */
 .hr>.space>*, .hr>.frac, .hr>.frac * {
-  transition-duration: 3s;  /* Iteration #0*/
-  transition-delay: 6s;  /* Iteration #0, delay before retract */
+  transition-duration: 4s;  /* Iteration #0*/
+  transition-delay: 1.5s;  /* Iteration #0, delay before retract */
 }
 .hr:hover>.space *, .hr:hover>.frac, .hr:hover>.frac * {
   transition-delay: 0s;  /* Iteration #0, delay before expand */
 }
 
 .hr>.space>*>*, .hr>.frac>*>* {
-  transition-duration: 3s;  /* Iteration #1*/
-  transition-delay: 3s;  /* Iteration #1, delay before retract */
+  transition-duration: 1s;  /* Iteration #1*/
+  transition-delay: 0.5s;  /* Iteration #1, delay before retract */
 }
 .hr:hover>.space>*>*, .hr:hover>.frac>*>* {
-  transition-delay: 3s;  /* Iteration #1, delay before expand */
+  transition-delay: 4s;  /* Iteration #1, delay before expand */
 }
 
 .hr>.space>*>*>*, .hr>.frac>*>*>* {
-  transition-duration: 3s;  /* Iteration #2*/
+  transition-duration: 0.5s;  /* Iteration #2*/
   transition-delay: 0s;  /* Iteration #2, delay before retract */
 }
 .hr:hover>.space>*>*>*, .hr:hover>.frac>*>*>* {
-  transition-delay: 6s;  /* Iteration #2, delay before expand */
+  transition-delay: 5s;  /* Iteration #2, delay before expand */
 }
 
 /* Fractal */

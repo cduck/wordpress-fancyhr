@@ -26,7 +26,13 @@ return '
   padding: 0;
   margin: 0;
   border: 0px none;
+  -moz-transition-property: none;
+  -webkit-transition-property: none;
+  -ms-transition-property: none;
   transition-property: none;
+  -moz-transition-timing-function: linear;
+  -webkit-transition-timing-function: linear;
+  -ms-transition-timing-function: linear;
   transition-timing-function: linear;
 }
 
@@ -58,6 +64,9 @@ return '
   box-sizing: border-box;
   /*background-color: rgba(100,0,0,0.04);*/
   position: static;
+  -moz-transition-property: padding-top;
+  -webkit-transition-property: padding-top;
+  -ms-transition-property: padding-top;
   transition-property: padding-top;
 }
 .hr:hover>.space * {
@@ -67,35 +76,71 @@ return '
 
 /* Transition timing */
 .hr>.space>*, .hr>.frac, .hr>.frac * {
+  -moz-transition-duration: 4s;  /* Iteration #0*/
+  -webkit-transition-duration: 4s;  /* Iteration #0*/
+  -ms-transition-duration: 4s;  /* Iteration #0*/
   transition-duration: 4s;  /* Iteration #0*/
+  -moz-transition-delay: 5.5s;  /* Iteration #0, delay before retract */
+  -webkit-transition-delay: 5.5s;  /* Iteration #0, delay before retract */
+  -ms-transition-delay: 5.5s;  /* Iteration #0, delay before retract */
   transition-delay: 5.5s;  /* Iteration #0, delay before retract */
 }
 .hr:hover>.space *, .hr:hover>.frac, .hr:hover>.frac * {
-  transition-delay: 2s;  /* Iteration #0, delay before expand */
+  -moz-transition-delay: 0.5s;  /* Iteration #0, delay before expand */
+  -webkit-transition-delay: 0.5s;  /* Iteration #0, delay before expand */
+  -ms-transition-delay: 0.5s;  /* Iteration #0, delay before expand */
+  transition-delay: 0.5s;  /* Iteration #0, delay before expand */
 }
 
 .hr>.space>*>*, .hr>.frac>*>* {
+  -moz-transition-duration: 2s;  /* Iteration #1*/
+  -webkit-transition-duration: 2s;  /* Iteration #1*/
+  -ms-transition-duration: 2s;  /* Iteration #1*/
   transition-duration: 2s;  /* Iteration #1*/
+  -moz-transition-delay: 3.5s;  /* Iteration #1, delay before retract */
+  -webkit-transition-delay: 3.5s;  /* Iteration #1, delay before retract */
+  -ms-transition-delay: 3.5s;  /* Iteration #1, delay before retract */
   transition-delay: 3.5s;  /* Iteration #1, delay before retract */
 }
 .hr:hover>.space>*>*, .hr:hover>.frac>*>* {
-  transition-delay: 6s;  /* Iteration #1, delay before expand */
+  -moz-transition-delay: 4.5s;  /* Iteration #1, delay before expand */
+  -webkit-transition-delay: 4.5s;  /* Iteration #1, delay before expand */
+  -ms-transition-delay: 4.5s;  /* Iteration #1, delay before expand */
+  transition-delay: 4.5s;  /* Iteration #1, delay before expand */
 }
 
 .hr>.space>*>*>*, .hr>.frac>*>*>* {
+  -moz-transition-duration: 1s;  /* Iteration #2*/
+  -webkit-transition-duration: 1s;  /* Iteration #2*/
+  -ms-transition-duration: 1s;  /* Iteration #2*/
   transition-duration: 1s;  /* Iteration #2*/
+  -moz-transition-delay: 2.5s;  /* Iteration #2, delay before retract */
+  -webkit-transition-delay: 2.5s;  /* Iteration #2, delay before retract */
+  -ms-transition-delay: 2.5s;  /* Iteration #2, delay before retract */
   transition-delay: 2.5s;  /* Iteration #2, delay before retract */
 }
 .hr:hover>.space>*>*>*, .hr:hover>.frac>*>*>* {
-  transition-delay: 8s;  /* Iteration #2, delay before expand */
+  -moz-transition-delay: 6.5s;  /* Iteration #2, delay before expand */
+  -webkit-transition-delay: 6.5s;  /* Iteration #2, delay before expand */
+  -ms-transition-delay: 6.5s;  /* Iteration #2, delay before expand */
+  transition-delay: 6.5s;  /* Iteration #2, delay before expand */
 }
 
 .hr>.space>*>*>*>*, .hr>.frac>*>*>*>* {
+  -moz-transition-duration: 0.5s;  /* Iteration #2*/
+  -webkit-transition-duration: 0.5s;  /* Iteration #2*/
+  -ms-transition-duration: 0.5s;  /* Iteration #2*/
   transition-duration: 0.5s;  /* Iteration #2*/
+  -moz-transition-delay: 2s;  /* Iteration #2, delay before retract */
+  -webkit-transition-delay: 2s;  /* Iteration #2, delay before retract */
+  -ms-transition-delay: 2s;  /* Iteration #2, delay before retract */
   transition-delay: 2s;  /* Iteration #2, delay before retract */
 }
 .hr:hover>.space>*>*>*>*, .hr:hover>.frac>*>*>*>* {
-  transition-delay: 9s;  /* Iteration #2, delay before expand */
+  -moz-transition-delay: 7.5s;  /* Iteration #2, delay before expand */
+  -webkit-transition-delay: 7.5s;  /* Iteration #2, delay before expand */
+  -ms-transition-delay: 7.5s;  /* Iteration #2, delay before expand */
+  transition-delay: 7.5s;  /* Iteration #2, delay before expand */
 }
 
 
@@ -121,6 +166,9 @@ return '
   /*top: auto;
   bottom: auto;*/
   /*background-color: rgba(0,0,255,0.1);*/
+  -moz-transition-property: padding-bottom, padding-top, margin-top;
+  -webkit-transition-property: padding-bottom, padding-top, margin-top;
+  -ms-transition-property: padding-bottom, padding-top, margin-top;
   transition-property: padding-bottom, padding-top, margin-top;
 }
 .hr:hover>.frac {
@@ -136,6 +184,9 @@ return '
   padding-bottom: 0%;
   margin-top: 0%;
   top: 50%;
+  -moz-transition-property: padding-bottom, margin-top;
+  -webkit-transition-property: padding-bottom, margin-top;
+  -ms-transition-property: padding-bottom, margin-top;
   transition-property: padding-bottom, margin-top;
 }
 .hr:hover>.frac * {
@@ -160,48 +211,102 @@ return '
 }
 .hr>.frac *:nth-child(1) {
   left: 0%;
+  -moz-transform-origin: left center;
+  -webkit-transform-origin: left center;
+  -ms-transform-origin: left center;
   transform-origin: left center;
 }
 .hr>.frac *:nth-child(2) {
   left: 25%;
+  -moz-transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
   transform: rotate(-90deg);
   width: 0px;
+  -moz-transform-origin: left center;
+  -webkit-transform-origin: left center;
+  -ms-transform-origin: left center;
   transform-origin: left center;
+  -moz-transition-property: padding-bottom, margin-top, width;
+  -webkit-transition-property: padding-bottom, margin-top, width;
+  -ms-transition-property: padding-bottom, margin-top, width;
   transition-property: padding-bottom, margin-top, width;
 }
 .hr>.frac *:nth-child(3) {
   left: 25%;
+  -moz-transform-origin: left center;
+  -webkit-transform-origin: left center;
+  -ms-transform-origin: left center;
   transform-origin: left center;
+  -moz-transition-property: padding-bottom, margin-top, top;
+  -webkit-transition-property: padding-bottom, margin-top, top;
+  -ms-transition-property: padding-bottom, margin-top, top;
   transition-property: padding-bottom, margin-top, top;
 }
 .hr>.frac *:nth-child(4) {
   left: 50%;
+  -moz-transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
   transform: rotate(-90deg);
   width: 0px;
+  -moz-transform-origin: left center;
+  -webkit-transform-origin: left center;
+  -ms-transform-origin: left center;
   transform-origin: left center;
+  -moz-transition-property: padding-bottom, margin-top, width;
+  -webkit-transition-property: padding-bottom, margin-top, width;
+  -ms-transition-property: padding-bottom, margin-top, width;
   transition-property: padding-bottom, margin-top, width;
 }
 .hr>.frac *:nth-child(5) {
   left: 50%;
+  -moz-transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
   transform: rotate(-90deg);
   width: 0px;
+  -moz-transform-origin: left center;
+  -webkit-transform-origin: left center;
+  -ms-transform-origin: left center;
   transform-origin: left center;
+  -moz-transition-property: padding-bottom, margin-top, width, top;
+  -webkit-transition-property: padding-bottom, margin-top, width, top;
+  -ms-transition-property: padding-bottom, margin-top, width, top;
   transition-property: padding-bottom, margin-top, width, top;
 }
 .hr>.frac *:nth-child(6) {
   left: 50%;
+  -moz-transform-origin: left center;
+  -webkit-transform-origin: left center;
+  -ms-transform-origin: left center;
   transform-origin: left center;
+  -moz-transition-property: padding-bottom, margin-top, top;
+  -webkit-transition-property: padding-bottom, margin-top, top;
+  -ms-transition-property: padding-bottom, margin-top, top;
   transition-property: padding-bottom, margin-top, top;
 }
 .hr>.frac *:nth-child(7) {
   left: 75%;
+  -moz-transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
   transform: rotate(-90deg);
   width: 0px;
+  -moz-transform-origin: left center;
+  -webkit-transform-origin: left center;
+  -ms-transform-origin: left center;
   transform-origin: left center;
+  -moz-transition-property: padding-bottom, margin-top, width, top;
+  -webkit-transition-property: padding-bottom, margin-top, width, top;
+  -ms-transition-property: padding-bottom, margin-top, width, top;
   transition-property: padding-bottom, margin-top, width, top;
 }
 .hr>.frac *:nth-child(8) {
   left: 75%;
+  -moz-transform-origin: left center;
+  -webkit-transform-origin: left center;
+  -ms-transform-origin: left center;
   transform-origin: left center;
 }
 .hr:hover>.frac *:nth-child(1) {

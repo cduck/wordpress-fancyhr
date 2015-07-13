@@ -45,7 +45,7 @@
   /*background-color: rgba(0,0,0,0.02);*/
   position: static;
 }
-.hr:hover>.space {
+.hr:hover>.space, .hr:focus>.space {
 }
 .hr>.space * {
   width: 25%;
@@ -57,7 +57,7 @@
   -ms-transition-property: padding-top;
   transition-property: padding-top;
 }
-.hr:hover>.space * {
+.hr:hover>.space *, .hr:focus>.space * {
   padding-top: 50%;
 }
 
@@ -73,7 +73,7 @@
   -ms-transition-delay: 5.5s;  /* Iteration #0, delay before retract */
   transition-delay: 5.5s;  /* Iteration #0, delay before retract */
 }
-.hr:hover>.space *, .hr:hover>.frac, .hr:hover>.frac * {
+.hr:hover>.space *, .hr:hover>.frac, .hr:hover>.frac *, .hr:focus>.space *, .hr:focus>.frac, .hr:focus>.frac * {
   -moz-transition-delay: 0.5s;  /* Iteration #0, delay before expand */
   -webkit-transition-delay: 0.5s;  /* Iteration #0, delay before expand */
   -ms-transition-delay: 0.5s;  /* Iteration #0, delay before expand */
@@ -90,7 +90,7 @@
   -ms-transition-delay: 3.5s;  /* Iteration #1, delay before retract */
   transition-delay: 3.5s;  /* Iteration #1, delay before retract */
 }
-.hr:hover>.space>*>*, .hr:hover>.frac>*>* {
+.hr:hover>.space>*>*, .hr:hover>.frac>*>*, .hr:focus>.space>*>*, .hr:focus>.frac>*>* {
   -moz-transition-delay: 4.5s;  /* Iteration #1, delay before expand */
   -webkit-transition-delay: 4.5s;  /* Iteration #1, delay before expand */
   -ms-transition-delay: 4.5s;  /* Iteration #1, delay before expand */
@@ -107,7 +107,7 @@
   -ms-transition-delay: 2.5s;  /* Iteration #2, delay before retract */
   transition-delay: 2.5s;  /* Iteration #2, delay before retract */
 }
-.hr:hover>.space>*>*>*, .hr:hover>.frac>*>*>* {
+.hr:hover>.space>*>*>*, .hr:hover>.frac>*>*>*, .hr:focus>.space>*>*>*, .hr:focus>.frac>*>*>* {
   -moz-transition-delay: 6.5s;  /* Iteration #2, delay before expand */
   -webkit-transition-delay: 6.5s;  /* Iteration #2, delay before expand */
   -ms-transition-delay: 6.5s;  /* Iteration #2, delay before expand */
@@ -124,7 +124,7 @@
   -ms-transition-delay: 2s;  /* Iteration #2, delay before retract */
   transition-delay: 2s;  /* Iteration #2, delay before retract */
 }
-.hr:hover>.space>*>*>*>*, .hr:hover>.frac>*>*>*>* {
+.hr:hover>.space>*>*>*>*, .hr:hover>.frac>*>*>*>*, .hr:focus>.space>*>*>*>*, .hr:focus>.frac>*>*>*>* {
   -moz-transition-delay: 7.5s;  /* Iteration #2, delay before expand */
   -webkit-transition-delay: 7.5s;  /* Iteration #2, delay before expand */
   -ms-transition-delay: 7.5s;  /* Iteration #2, delay before expand */
@@ -159,7 +159,7 @@
   -ms-transition-property: padding-bottom, padding-top, margin-top;
   transition-property: padding-bottom, padding-top, margin-top;
 }
-.hr:hover>.frac {
+.hr:hover>.frac, .hr:focus>.frac {
   padding-top: 25%;
   padding-bottom: 25%;
   margin-top: -25%;
@@ -177,18 +177,18 @@
   -ms-transition-property: padding-bottom, margin-top;
   transition-property: padding-bottom, margin-top;
 }
-.hr:hover>.frac * {
+.hr:hover>.frac *, .hr:focus>.frac * {
   padding-bottom: 12.5%;
   margin-top: -6.25%;
   /*background-color: rgba(0,255,0,0.1);*/
 }
 .hr>.frac>*>* {
 }
-.hr:hover>.frac>*>* {
+.hr:hover>.frac>*>*, .hr:focus>.frac>*>* {
 }
 .hr>.frac>*>*>* {
 }
-.hr:hover>.frac>*>*>* {
+.hr:hover>.frac>*>*>*, .hr:focus>.frac>*>*>* {
 }
 .hr>.frac *:empty {
   background-color: #DDD;
@@ -297,29 +297,29 @@
   -ms-transform-origin: left center;
   transform-origin: left center;
 }
-.hr:hover>.frac *:nth-child(1) {
+.hr:hover>.frac *:nth-child(1), .hr:focus>.frac *:nth-child(1) {
 }
-.hr:hover>.frac *:nth-child(2) {
+.hr:hover>.frac *:nth-child(2), .hr:focus>.frac *:nth-child(2) {
   width: 25%;
 }
-.hr:hover>.frac *:nth-child(3) {
+.hr:hover>.frac *:nth-child(3), .hr:focus>.frac *:nth-child(3) {
   top: 0%;
 }
-.hr:hover>.frac *:nth-child(4) {
+.hr:hover>.frac *:nth-child(4), .hr:focus>.frac *:nth-child(4) {
   width: 25%;
 }
-.hr:hover>.frac *:nth-child(5) {
+.hr:hover>.frac *:nth-child(5), .hr:focus>.frac *:nth-child(5) {
   top: 100%;
   width: 25%;
 }
-.hr:hover>.frac *:nth-child(6) {
+.hr:hover>.frac *:nth-child(6), .hr:focus>.frac *:nth-child(6) {
   top: 100%;
 }
-.hr:hover>.frac *:nth-child(7) {
+.hr:hover>.frac *:nth-child(7), .hr:focus>.frac *:nth-child(7) {
   top: 100%;
   width: 25%;
 }
-.hr:hover>.frac *:nth-child(8) {
+.hr:hover>.frac *:nth-child(8), .hr:focus>.frac *:nth-child(8) {
 }
 
 .hr>.frac>*:nth-child(1) {
